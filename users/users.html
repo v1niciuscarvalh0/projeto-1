@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleFusion</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="./users.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="left-nav">
+            <div class="logo">
+                <a href="../sobre/sobre.html">
+                    <img src="../img/logo2.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="link">
+                        <a href="../products/products.html">Produtos</a>
+                    </li>
+                    </li>
+                    <li class="link">
+                        <a href="../users/users.html">Usuarios</a>
+                    </li>
+                    <li class="link">
+                        <a href="../contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-user">
+
+            <i class="fa-duotone fa-solid fa-user"></i>
+    </nav>
+    <div class="container">
+        <h1>Lista de usuários</h1>
+        <main>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <button class="close" id="closeModal">&times;</button>
+                    <form action="" method="post">
+                        <div class="flex">
+                            <h2>Cadastro de usuário</h2>
+                            <div class="modal-item">
+                                <label for="thumbnail">Foto</label>
+                                <input type="file" id="thumbnail" accept="image/*">
+                                <div class="erro erro-thumbnail"></div>
+
+                            </div>
+                            <div class="modal-item">
+                                <label for="first-name">Nome</label>
+                                <input type="text" id="first-name">
+                                <div class="erro erro-first-name"></div>
+                            </div>
+                            <div class="modal-item">
+                                <label for="last-name">Sobrenome</label>
+                                <input type="text" id="last-name">
+                                <div class="erro erro-last-name"></div>
+                            </div>
+                            <div class="modal-item">
+                                <label for="age">Idade</label>
+                                <input type="text" id="age">
+                                <div class="erro erro-age"></div>
+
+                            </div>
+                            <div class="modal-item">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                                <div class="erro erro-email"></div>
+                            </div>
+                            <div class="btn-left-align">
+                                <button type="submit" class="btn-modal">Cadastrar</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+            <div class="btn-left-align">
+                <button type="button" class="open-modal-btn">Adicionar</button>
+            </div>
+            <div class="card-container">
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <script src="./usersScript.js"></script>
+</body>

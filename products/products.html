@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleFusion</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="./produtos.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="left-nav">
+            <div class="logo">
+                <a href="../sobre/sobre.html">
+                    <img src="../img/logo2.png" alt="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="link">
+                        <a href="../products/products.html">Produtos</a>
+                    </li>
+                    </li>
+                    <li class="link">
+                        <a href="../users/users.html">Usuarios</a>
+                    </li>
+                    <li class="link">
+                        <a href="../contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-user">
+
+            <i class="fa-duotone fa-solid fa-user"></i>
+    </nav>
+    <div class="container">
+        <h1>Setor de Calçados</h1>
+        <main>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <button class="close" id="closeModal">&times;</button>
+                    <form action="" method="post">
+                        <div class="flex">
+                            <h2>Cadastro de produto</h2>
+                            <div class="modal-item">
+                                <label for="thumbnail">Imagem</label>
+                                <input type="file" id="thumbnail" accept="image/*">
+                                <div class="erro erro-thumbnail"></div>
+
+                            </div>
+                            <div class="modal-item">
+                                <label for="title">Título</label>
+                                <input type="text" id="title">
+                                <div class="erro erro-title"></div>
+                            </div>
+                            <div class="modal-item">
+                                <label for="description">Descricao</label>
+                                <input type="text" id="description">
+                                <div class="erro erro-description"></div>
+                            </div>
+                            <div class="modal-item">
+                                <label for="price">Preço</label>
+                                <input type="text" id="price">
+                                <div class="erro erro-price"></div>
+
+                            </div>
+                            <div class="modal-item">
+                                <label for="brand">Marca</label>
+                                <input type="text" id="brand">
+                                <div class="erro erro-brand"></div>
+
+                            </div>
+                            <div class="modal-item">
+                                <label for="category">Categoria</label>
+                                <input type="text" id="category">
+                                <div class="erro erro-category"></div>
+                            </div>
+                            <div class="btn-left-align">
+                                <button type="submit" class="btn-modal">Cadastrar</button>
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+            <div class="btn-left-align">
+                <button type="button" class="open-modal-btn">Adicionar</button>
+            </div>
+            <div class="card-container">
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+
+    </footer>
+    <script src="productsScripts.js"></script>
+</body>

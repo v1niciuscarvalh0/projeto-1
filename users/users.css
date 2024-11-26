@@ -1,0 +1,174 @@
+
+.h2-main { 
+    margin-bottom: 5rem;
+}
+
+.img-perfil {
+    border-radius: 10px;
+}
+
+.img-card img {
+    width: 326px;
+    height: 326px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    overflow: hidden;
+    display: flex;
+    width: 330px;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid #888888;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card-content {
+    display: flex;
+    width: 80%;
+    height: 30%;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.card-btn {
+    color: var(--background);
+    background-color: var(--primary);
+    padding: 12px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card-btn:hover {
+    color: var(--primary);
+    background-color: var(--highlight);
+
+}
+
+.card-h2 { 
+    font-size: 1.2rem;
+}
+
+.card-p {
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.btn-shop-car {
+    background-color: #e92525;
+}
+
+.btn-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o modal na tela */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    text-align: center;
+}
+
+/* Estilos para o botão de fechar */
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+/* Estilo para o botão de abrir o modal */
+.open-modal-btn {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #28a745;
+    margin-right: 45px;
+}
+
+.open-modal-btn:hover {
+    transform: scale(1.05)
+}
+
+.flex {
+    align-items:start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal-item {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.modal-item input {
+    width: 100%;
+    padding: 10px;
+}
+
+.btn-modal {
+    margin-top: 8px;
+    padding: 10px;
+}
+
+.btn-left-align {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 30px;
+}
+
+.erro {
+    color: red;
+}
